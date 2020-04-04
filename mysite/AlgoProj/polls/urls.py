@@ -5,7 +5,7 @@ from django.views.generic import TemplateView, ListView, DetailView
 
 app_name = 'polls'
 urlpatterns = [
-    path('welcome/',TemplateView.as_view(template_name="polls/welcome.html")),
+    path('topics/',TemplateView.as_view(template_name="polls/topics.html")),
     path('', views.IndexView.as_view(), name='index'),
     path('<int:pk>/', views.DetailView.as_view(), name='detail'),
     path('<int:pk>/results/', views.ResultsView.as_view(), name='results'),
