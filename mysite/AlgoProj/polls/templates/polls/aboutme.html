@@ -10,7 +10,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
@@ -25,5 +25,52 @@
       </ul>
     </div>
 </nav>
+<br>
+
+<div class="container">
+  <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
+      <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+      <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+    </div>
+  </div>
+</div>
+
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-md-8 blog-main">
+      <div class="blog-post">
+        <div class="p-4 mb-3 bg-light rounded">
+          <h2 class="blog-post-title">F(Never)AQ</h2>
+          <p class="blog-post-meta">From Sammie:</p>
+
+          <p>This site is part of an extra credit project for CS 4102 at the University of Virginia.</p>
+          <hr>
+          <p>The 'Welcome' tab welcomes you! Along with the navbar at the top, the 'Welcome' page will allow you to navigate through this site.</p>
+          <p>The 'AboutMe' page, which you're already on, is where I've decided to introduce myself. See the 'About Me' box at the right!</p>
+          <p>The 'Examples' page is where I have examples from my daily life where I apply topics from Algorithms, or any interesting ties I've made.</p>
+        </div>
+      </div><!-- /.blog-post -->
+
+    </div><!-- /.blog-main -->
+
+    <aside class="col-md-4 blog-sidebar">
+      <div class="p-4 mb-3 bg-light rounded">
+        <h4 class="font-italic">About Me</h4>
+        <p class="mb-0">I am a third-year student at the University of Virginia in the BACS program, studying Computer Science and Linguistics.</p>
+      </div>
+    </aside><!-- /.blog-sidebar -->
+
+  </div><!-- /.row -->
+</main><!-- /.container -->
+
+<div class="jumbotron p-2 p-md-2 text-white rounded bg-dark" style="text-align: center">
+  <footer class="blog-footer">
+    Copyright ©2020 Ella (Sammie) Chung 
+  </footer>
+</div>
+
+
 
 {% endblock content %}
