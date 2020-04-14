@@ -3,15 +3,22 @@
 {% block content %}
 <!-- this don't do anything rn lol -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link rel="stylesheet"  type="text/css" href="{% static 'polls/style.css' %}">
+<!--<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo:700&display=swap" rel="stylesheet">-->
+<link rel="stylesheet"  type="text/css" href="{% static 'styling/style.css' %}">
 
 <div class="container">
-  <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
-    <div class="col-md-6 px-0">
+  <div class="jumbotron text-black rounded" style="background-color: rgba(255, 192, 203, 0.781); padding-top: 15px">
       <h1 class="display-4 font-italic">F(Never)AQ</h1>
-      <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
-      <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
-    </div>
+      <hr>
+      <div class="grid-container" style="display: grid; grid-template-columns: 50% 50%; grid-gap: 22%">
+        <div>
+          <p class="lead my-3">What is the Purpose of This Site? <br>
+          This site is part of an extra credit project for CS 4102 at the University of Virginia.</p>
+        </div>
+        <div>
+          <img src="../../static/styling/images/sammie.jpeg" alt="sammie" style="width: 50%; height: 50%;">
+        </div>
+      </div>
   </div>
 </div>
 
@@ -20,10 +27,8 @@
     <div class="col-md-8 blog-main">
       <div class="blog-post">
         <div class="p-4 mb-3 bg-light rounded">
-          <h2 class="blog-post-title">What is the Purpose of This Site?</h2>
-          <p>This site is part of an extra credit project for CS 4102 at the University of Virginia.</p>
-          <hr>
           <p>The 'Algorithms in the World' tab welcomes you! Along with the navbar at the top, the page will allow you to navigate through this site.</p>
+          <p>The 'Topics' page explains the main topics that I chose to display, given that it is difficult to explain all the topics covered this semester.</p>
           <p>The 'AboutMe' page, which you're already on, is where I've decided to introduce myself. See the 'About Me' box at the right!</p>
           <p>The 'Examples' page is where I have examples from my daily life where I apply topics from Algorithms, or any interesting ties I've made.</p>
           <p class="blog-post-meta">- Sammie (Ella)</p>
