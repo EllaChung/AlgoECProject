@@ -1,3 +1,13 @@
+.container {
+  background-color: #d4ffc0a6;
+}
+h2 {
+  color: black;
+}
+
+.carousel-inner {
+  color: black;
+}
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */

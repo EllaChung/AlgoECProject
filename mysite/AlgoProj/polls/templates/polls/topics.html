@@ -3,49 +3,187 @@
 {% block content %}
 <!-- this don't do anything rn lol -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link rel="stylesheet"  type="text/css" href="{% static 'styling/topics.css' %}">
+<link rel="stylesheet"  type="text/css" href="{% static 'polls/topics.css' %}">
 
 
 <!-- START THE FEATURETTES -->
 
-<hr class="featurette-divider">
+<main role="main">
 
-<div class="row featurette">
-  <div class="col-md-7">
-    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+  <section class="text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Topics from this Semester</h1>
+      <p class="lead text-muted">Key Topics Covered This Semester.</p>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <p class="card-text">Divide and Conquer</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">How much can this part really fit in though, like if I wrote a whole lot, would the cards expand accordingly, or would they 
+                  just get so big that it'll be hard to format or structure?
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <p class="card-text">Recurrence Solving Techniques</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">This includes the Tree method (visualizing a tree and dividing to look at the overall picture); Guess and Check 
+                  (using a mathematical guess, and checking using induction); "Cookbook"/Master Theorem (recurses on smaller problems, then generalizing to a form);
+                  Substitution (Changing the structure of the question, then returning to the original form and substituting)
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <p class="card-text">Closest Pair of Points</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <p class="card-text">Strassen's Algorithm</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <p class="card-text">Sorting Algorithms</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <p class="card-text">Dynamic Programming</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <p class="card-text">Matrix Chain Multiplication</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <p class="card-text">Seam Carving</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <p class="card-text">Longest Common Subsequence</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <p class="card-text">Greedy Algorithms</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <p class="card-text">Shortest Path Algorithms</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <p class="card-text">Minimum Spanning Trees</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <p class="card-text">Bellman Ford and Floyd Wasrshall</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <p class="card-text">Max Flow/Min Cut</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <p class="card-text">Reductions</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="col-md-5">
-  </div>
-</div>
 
-<hr class="featurette-divider">
-
-<div class="row featurette">
-  <div class="col-md-7 order-md-2">
-    <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-  </div>
-  <div class="col-md-5 order-md-1">
-  </div>
-</div>
-
-<hr class="featurette-divider">
-
-<div class="row featurette">
-  <div class="col-md-7">
-    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-  </div>
-  <div class="col-md-5">
-  </div>
-</div>
-
-<hr class="featurette-divider">
-
-<!-- /END THE FEATURETTES -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+</main>
 
 {% endblock content %}
 
