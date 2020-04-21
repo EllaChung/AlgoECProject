@@ -8,6 +8,11 @@ h2 {
 .carousel-inner {
   color: black;
 }
+
+.col-lg-4 {
+  padding-top: 2%;
+}
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
