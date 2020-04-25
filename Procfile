@@ -1,2 +1,2 @@
-release: python manage.py migrate
-web: gunicorn mysite.wsgi --log-level debug
+release: pip install -r requirements.txt;
+web: gunicorn mysite.wsgi
