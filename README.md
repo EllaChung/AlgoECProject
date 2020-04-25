@@ -5,3 +5,6 @@
 
 ## Postgres
 Used for the database. Used under the PostgresQL Liscence. Learn more [here](https://www.postgresql.org/about/licence/).
+
+## Bootstrap
+Bootstrap is released under the MIT license and is copyright 2018 Twitter. The example templates were modified to display the styling for this site.
