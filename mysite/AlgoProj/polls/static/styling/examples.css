@@ -9,6 +9,15 @@
   .featurette-divider {
     margin: 5rem 0; /* Space out the Bootstrap <hr> more */
   }
+
+  .col-md-7 {
+    background-color: rgba(255, 255, 255, 0.664);
+    height: 10%;
+  }
+
+  h2 {
+    margin-top: 2rem;
+  }
   
   /* Thin out the marketing headings */
   .featurette-heading {
