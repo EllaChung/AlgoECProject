@@ -52,12 +52,10 @@
     padding-bottom: .75rem;
     font-size: .875rem;
   }
-
   img {
     width: 50%;
     height: 50%;
   }
-  
   .card-img-right {
     height: 100%;
     border-radius: 0 3px 3px 0;
