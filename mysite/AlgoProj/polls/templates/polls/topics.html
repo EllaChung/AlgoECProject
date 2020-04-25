@@ -25,7 +25,10 @@
             <div class="card-body">
               <p class="card-text">Divide and Conquer</p>
               <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">Divide and Conquer is true to its name - recursively dividing the problem into sub problems, then working at them and building back up.
+                <small class="text-muted">Divide and Conquer is true to its name - recursively dividing the problem into sub problems, then working at them and building back up. 
+                  The subproblems that result from the breaking up of the original problem are the instances of the problem we started with. From here, the 'conquer' step is done, which is when 
+                  the subproblems are solved recursively, until the base case is reached. Lastly, the combine step requires that the subproblems' solutions are combined together, 
+                  which, when builed back up, solves the original problem!
                 </small>
               </div>
             </div>
@@ -36,9 +39,11 @@
             <div class="card-body">
               <p class="card-text">Recurrence Solving Techniques</p>
               <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">This includes the Tree method (visualizing a tree and dividing to look at the overall picture); Guess and Check 
-                  (using a mathematical guess, and checking using induction); "Cookbook"/Master Theorem (recurses on smaller problems, then generalizing to a form);
-                  Substitution (Changing the structure of the question, then returning to the original form and substituting)
+                <small class="text-muted">There are several techniques we talked about during the semester. This includes: <br>
+                  1. the Tree method (visualizing a tree and dividing to look at the overall picture); <br>
+                  2. Guess and Check (using a mathematical guess, and checking using induction); <br>
+                  3. "Cookbook"/Master Theorem (recurses on smaller problems, then generalizing to a form); <br>
+                  4. Substitution (Changing the structure of the question, then returning to the original form and substituting)
                 </small>
               </div>
             </div>
@@ -50,7 +55,11 @@
               <p class="card-text">Closest Pair of Points</p>
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-muted">Closest Pair of Points was, when given a number of points in a space, finding the pair of points that 
-                  are the closest to each other, but using the smallest distance, delta, to calculate and examine the runway of 2delta. </small>
+                  are the closest to each other, but using the smallest distance, delta, to calculate and examine the runway of 2delta. The delta
+                is found by comparing the distance in certain spans of the cut. This is done by dividing the 'runway,' into little cubbies of size
+              delta/2, such that each cubby will only have 1 point. From here, only the next (up to) 15 points are considered, since we already know
+            the distances of the points below that.We then combine, such that the points are sorted by y-coordinate, and the closest pair is updated,
+          then returned.</small>
               </div>
             </div>
           </div>
@@ -61,7 +70,10 @@
             <div class="card-body">
               <p class="card-text">Strassen's Algorithm</p>
               <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">The idea behind Strassen's Algorithm is to multiply n by n matrices, such that it breaks down bigger matrices, increases the number of small subproblems, then builds back up. It is a fast algorithm for large matrices.</small>
+                <small class="text-muted">The idea behind Strassen's Algorithm is to multiply n by n matrices, such that it breaks down bigger matrices, 
+                  increases the number of small subproblems, then builds back up. It is a fast algorithm for large matrices. In using this method of multiplying
+                matrices, we're able to reduce the major parts of the equation that would affect the overall runtime. His method results in the equation: 
+              T(n) = 7T(n/2) + (9/2)n^2.</small>
               </div>
             </div>
           </div>
@@ -93,7 +105,9 @@
               <p class="card-text">Dynamic Programming</p>
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-muted">Dynamic Programming is when the optimal solution of the overall problem is solved from the optimal solution of the smaller problem. 
-                  There are two ways - top down, or bottom up. 
+                  There are two ways - top down (solving each subproblem recursively), or bottom up (iteratively solving from the smallest to the biggest). A key component of dynamic programming is that it looks at the 'last thing' done, which is then identified as 
+                  the recursive bit of the algorithm. This is then saved to a place in memory, which can be thought of as being "updated," when a more optimal solution to a 
+                  subproblem is found.
                 </small>
               </div>
             </div>
@@ -105,7 +119,11 @@
             <div class="card-body">
               <p class="card-text">Matrix Chain Multiplication</p>
               <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">Ties under Dynamic Programming, but it aims to solve the optimal/most efficient way to multiply the matrices.</small>
+                <small class="text-muted">Ties under Dynamic Programming, but it aims to solve the optimal/most efficient way to multiply the matrices.
+                  A key component to matrix chain multiplication is that the order of grouping for multiplication matters! It has a rough backbone of 
+                  dynamic programming, in that it identifies the recursive part of the problem, updates/saves the optimal solution to a place in memory, 
+                  then selects the best order in order to solve the subproblems. 
+                </small>
               </div>
             </div>
           </div>
@@ -116,7 +134,8 @@
               <p class="card-text">Seam Carving</p>
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-muted">Seam carving aims to scale the image, such that images with similar pixels are removed, around perhaps a focal object in an image.
-                  The pixels that are removed can be thought of as having "lowest energy", or least variance within that pixel.
+                  The pixels that are removed can be thought of as having "lowest energy", or least variance within that pixel. Unlike scaling, which may shrink the object 
+                  that is meant to be preserved as best possible, seam carving allows for the 'main' part of an image to be retained. 
                 </small>
               </div>
             </div>
@@ -128,7 +147,9 @@
               <p class="card-text">Longest Common Subsequence</p>
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-muted">Just like the name, the longest common subsequence looks for the longest subsequence present, such that it 
-                  finds the ones that fit the set criteria, and is the longest sequence of a given problem. 
+                  finds the ones that fit the set criteria, and is the longest sequence of a given problem. If brute force is used, every segment of one sequence
+                  would be compared to the segments of another segment. However, this can be avoided by using dynamic programming - which is done similar to the forementioned
+                  steps of identifying recursive structure, save into memory, select order of top-down or bottom-up. 
                 </small>
               </div>
             </div>
@@ -142,7 +163,8 @@
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-muted">Greedy Algorithm looks at one solution, and solely makes the decision to follow that solution. It's not always the 
                   most optimal solution, which is why greedy algorithm may not be used all the time. However, when an algorithm chooses to follow one sub route of 
-                  an algorithm and ignores any other, that makes the algorithm greedy. </small>
+                  an algorithm and ignores any other, that makes the algorithm greedy. An exchange algorithm can be used to show the correctness of a greedy algorithm.
+                This is done by switching by the parts until one solution is exchanged by that of the other, showing that the algorithm is just as good as the original.</small>
               </div>
             </div>
           </div>
@@ -152,17 +174,25 @@
             <div class="card-body">
               <p class="card-text">Huffman Coding</p>
               <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">9 mins</small>
+                <small class="text-muted">Huffman coding focuses on selecting the elements in the tree that are least frequently occuring, then pairs them together to 
+                  be combined into a subtree. By repeating this process until all the elements of the tree have been examined, the tree is 'reconstructed' such that the 
+                element that is most frequently occuring is found at the root node, and the least frequest elements are in the leaves of the tree. Using an exchange argument, 
+              we are able to show that there exists an optimal tree where the least frequently occuring characters are siblings.</small>
               </div>
             </div>
           </div>
         </div>
+
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
             <div class="card-body">
               <p class="card-text">Belady Cache Replacement</p>
               <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">9 mins</small>
+                <small class="text-muted">The maintaining of cache depends on the size of the input, in relation to the memory access pattern. The output of the caching problem is the list of items that are cached previously, which also lessens the amount of fetches that can be done
+                  for the cache. A way to solve this is to replace something from the cache, such that space is allowed for incoming things. The Belady Cache Replacement
+                  is a greedy choice, which removes the item that is accessed the farthest into the future. This also requires an optimal substructure, and repeatedly applies the 
+                  greedy choice, until it is no longer applicable.
+                </small>
               </div>
             </div>
           </div>
@@ -173,7 +203,12 @@
             <div class="card-body">
               <p class="card-text">Graphs</p>
               <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">9 mins</small>
+                <small class="text-muted">A graph can have two representations - the adjacency list representation, and the adjacency matrix representation. (One is preferred
+                  over the other depending on the situation.) A graph has a path, which is when there is a path from one node to another node, and there is a an edge between the nodes. 
+                  However, there are multiple types of paths (i.e. simple, cycle). A connected graph is when there is a path from any pair of nodes, but like the paths, the types of 
+                  graphs may also vary. The graph also has topics like a Minimum Spanning Tree, various algorithms (i.e. Kruskal's Algorithm, Prim's Algorithm, etc.), as well as 
+                  theorems (i.e. cut theorem).
+                </small>
               </div>
             </div>
           </div>
@@ -183,7 +218,11 @@
             <div class="card-body">
               <p class="card-text">Shortest Paths</p>
               <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">9 mins</small>
+                <small class="text-muted">The shortest path is going from one node (starting/source node) to the 'end' node, with the minimum-weight edge making up the paths. 
+                  Dijkstra's Shortest Path Algorithm can be used to add the nodes that are the closest to the source node, that has yet to be visited. Prim's Algorithm connects 
+                  the nodes using the minimum weight edge, that has yet to be checked, and also ones that connect a node. Breadth-First Search visits all the nodes, until all the 
+                  nodes are visited. The interesting part about BFS is that it does not consider weights/edges at all. 
+                </small>
               </div>
             </div>
           </div>
@@ -193,7 +232,12 @@
             <div class="card-body">
               <p class="card-text">Bellman-Ford and Floyd Warshall</p>
               <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">9 mins</small>
+                <small class="text-muted">Bellman-Ford mainly uses dynamic programming, but has two options that can be implemented. In the general scope, Bellman-Ford uses the weights of the shortest
+                   path form the start to the end node using at most, i edges. The first is following a path of i edges - 1 from the 
+                  source node to the desired node, which will make the edge to be between that node to the final node, OR you can have a path that goes from the source node to the final node
+                  with a path of at most i edges - 1. 
+
+                </small>
               </div>
             </div>
           </div>
@@ -202,9 +246,11 @@
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
             <div class="card-body">
-              <p class="card-text">Max FLow/Min Cut</p>
+              <p class="card-text">Max Flow/Min Cut</p>
               <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">9 mins</small>
+                <small class="text-muted">Max flow aims to find the flow that maximizes outflow of a node - the inflows to a node. Ford-Fulkerson is an algorithm that finds 
+                  a path from the source node to the sink node in the residual graph, and uses non-zero weight edges to find this path. It uses the minimum of the units to create
+                this augmenting path. Another algorithm is Edmonds-Karp, which selects the augmenting path that has the least number of hops. </small>
               </div>
             </div>
           </div>
