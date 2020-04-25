@@ -1,5 +1,5 @@
 # AlgoECProject
-## Site Description
+## Project Description
 This site is created as UVA's CS 4102 Algorithms Extra Credit project. It navigates through the topics learned throughout the semester, and is tied to personal examples.
 
 ## Acknowledgements 
